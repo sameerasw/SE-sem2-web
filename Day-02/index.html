@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lists</title>
+        <style>
+            html {
+                background-color: rgb(59, 59, 59);
+                color: white;
+                font-size: large;
+                font-family: 'Roboto', sans-serif;
+            }
+            .level1 {
+                list-style-type: decimal;
+            }
+            .level2 {
+                list-style-type: lower-alpha;
+            }
+            .level3 {
+                list-style-type: lower-roman;
+            }
+            #navlist li{
+                display: inline;
+                padding-right: 10%;
+                list-style: none;
+            }
+            #navlist li a{
+                text-decoration: none;
+                color: rgb(255, 176, 176);
+            }
+            #navlist li a:hover{
+                color: rgb(255, 255, 255);
+            }
+            #navlist {
+                padding: 1%;
+                border: 1%;
+                background-color: rgb(43, 43, 43);
+                border-radius: 25px;
+            }
+        </style>
+	</head>
+	<body>
+        <ul id="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li id="active"><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<ul>
+				<li>Item 3.1</li>
+				<li>Item 3.2</li>
+				<li>Item 3.3</li>
+				<ul>
+					<li>Item 3.3.1</li>
+					<li>Item 3.3.2</li>
+					<li>Item 3.3.3</li>
+				</ul>
+			</ul>
+		</ul>
+
+<br>
+
+        <ol class="level1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <ol class="level2">
+                <li>Item 3.1</li>
+                <li>Item 3.2</li>
+                <li>Item 3.3</li>
+                <ol class="level3" start="4">
+                    missing items...
+                    <li>Item 3.3.4</li>
+                    <li>Item 3.3.5</li>
+                    <li>Item 3.3.6</li>
+                </ol>
+        </ol>
+
+<br>
+        <dl>
+            <dt>This is a definition tag</dt>
+                <dd>This is a definition description</dd>
+        </dl>
+	</body>
+</html>
