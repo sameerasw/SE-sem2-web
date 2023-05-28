@@ -32,6 +32,8 @@
             }
             #navlist li a:hover{
                 color: rgb(255, 255, 255);
+                transition: 500ms;
+                text-shadow: 25px rgb(0, 0, 0);
             }
             #navlist {
                 padding: 1%;
@@ -39,9 +41,33 @@
                 background-color: rgb(43, 43, 43);
                 border-radius: 25px;
             }
+            td, th, table {
+                border: 1px solid rgb(255, 255, 255);
+                padding: 0.5em;
+                border-radius: 10px;
+            }
+            table :hover{
+                border-radius: 20px;
+                cursor:cell;
+                transition: 500ms;
+            }
+            th {
+                border: 1px solid rgba(255, 255, 255, 0);
+                background-color: rgb(39, 39, 39);
+            }
+            .red {
+                background-color: rgb(121, 1, 1);
+            }
+            .green {
+                background-color: rgb(0, 114, 0);
+            }
+            .blue {
+                background-color: rgb(0, 0, 114);
+            }
         </style>
 	</head>
 	<body>
+        <div>
         <ul id="navlist">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
@@ -63,9 +89,8 @@
 				</ul>
 			</ul>
 		</ul>
-
-<br>
-
+    </div>
+    <div>
         <ol class="level1">
             <li>Item 1</li>
             <li>Item 2</li>
@@ -81,11 +106,32 @@
                     <li>Item 3.3.6</li>
                 </ol>
         </ol>
+    </div>
 
 <br>
         <dl>
             <dt>This is a definition tag</dt>
                 <dd>This is a definition description</dd>
         </dl>
+
+        <table>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+            <tr class="red">
+                <td>Row 1, Column 1</td>
+                <td>Row 1, Column 2</td>
+                <td rowspan="2">Rowspan</td>
+            </tr>
+            <tr class="green">
+                <td>Row 2, Column 1</td>
+                <td>Row 2, Column 2</td>
+            </tr>
+            <tr class="blue">
+                <td colspan="3">Colspan</td>
+            </tr>
+        </table>
 	</body>
 </html>
