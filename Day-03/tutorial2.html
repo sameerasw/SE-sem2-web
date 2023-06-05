@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tutorial 2</title>
+		<style>
+			h1,
+			h2 {
+				text-align: center;
+				background-color: rgb(255, 243, 173);
+			}
+
+			table {
+				border: 4px solid black;
+				margin-left: auto;
+				margin-right: auto;
+				border-collapse: collapse;
+			}
+
+			td,
+			th {
+				padding: 1%;
+			}
+
+			th,
+			td {
+				font-style: bold;
+				border: 4px solid black;
+			}
+
+			.lane-swim {
+				background-color: rgb(154, 231, 255);
+			}
+
+			.swim-fit {
+				background-color: aquamarine;
+			}
+
+			.adult-swim {
+				background-color: rgb(216, 175, 255);
+			}
+
+			.junior-swim {
+				background-color: rgb(255, 181, 181);
+			}
+
+			.parents {
+				background-color: coral;
+			}
+
+			.public {
+				background-color: rgb(150, 255, 150);
+			}
+
+			.closed {
+				background-color: rgb(255, 80, 80);
+			}
+
+			tr:first-of-type {
+				font-family: 'Roboto';
+				font-size: 20px;
+			}
+			tr:first-child {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Tutorial 2 - Pool Schedule</h1>
+		<h2>Sameera Sandakelum</h2>
+		<div class="table-div">
+			<table>
+				<tr>
+					<td colspan="6">
+						<span>Prices</span>
+						<ul>
+							<li>Free - Infants (0-3)</li>
+							<li>&#163;3 - Child (4-12)</li>
+							<li>&#163;4 - Youth (13-17)</li>
+							<li>&#163;5 - Adult</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th></th>
+					<th>7:00-8:00</th>
+					<th>8:00-9:00</th>
+					<th>9:00-11:00</th>
+					<th>11:00-5:00</th>
+					<th>5:00-7:00</th>
+				</tr>
+				<tr>
+					<th>Monday</th>
+					<td class="swim-fit">SwimFit</td>
+					<td class="lane-swim" colspan="2">Lane Swim</td>
+					<td class="public" rowspan="7">Public Swim</td>
+					<td class="adult-swim">Adult Swim Club</td>
+				</tr>
+				<tr>
+					<th>Tuesday</th>
+					<td class="lane-swim" colspan="2">Lane Swim</td>
+					<td class="parents">Parents and Tots</td>
+					<td class="junior-swim">Junior Swim Club</td>
+				</tr>
+				<tr>
+					<th>Wednesday</th>
+					<td class="swim-fit">SwimFit</td>
+					<td class="lane-swim" colspan="2">Lane Swim</td>
+					<td class="adult-swim">Adult Swim Club</td>
+				</tr>
+				<tr>
+					<th>Thursday</th>
+					<td class="lane-swim" colspan="2">Lane Swim</td>
+					<td class="parents">Parents and Tots</td>
+					<td class="junior-swim">Junior Swim Club</td>
+				</tr>
+				<tr>
+					<th>Friday</th>
+					<td class="swim-fit">SwimFit</td>
+					<td class="lane-swim" colspan="2">Lane Swim</td>
+					<td class="adult-swim">Adult Swim Club</td>
+				</tr>
+				<tr>
+					<th>Saturday</th>
+					<td class="public" colspan="3">Public Swim</td>
+					<td class="closed" rowspan="2">Closed</td>
+				</tr>
+				<tr>
+					<th>Sunday</th>
+					<td class="public" colspan="3">Public Swim</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
