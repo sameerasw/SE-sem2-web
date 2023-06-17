@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+        <style>
+            html {
+                font-family: 'Roboto', sans-serif;
+            }
+            body {
+                background-color: #393939;
+                color: #ffffff;
+            }fieldset {
+                width: 50%;
+                margin: 0 auto;
+            }
+            form {
+                margin: 0 auto;
+            }
+            input {
+                margin: 5px 0;
+                position: absolute;
+                left: 50%;
+            }
+            input[type="submit"] {
+                margin-top: 10px;
+            }
+        </style>
+	</head>
+	<body>
+		<h1>Hotel reservation</h1>
+		<fieldset>
+            <legend>Your Details</legend>
+            <form action="process.php" method="post">
+                <label for="name">First name:</label>
+                <input type="text" name="name" id="name" required /><br>
+                <label for="surname">Surname:</label>
+                <input type="text" name="surname" id="surname" required /><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required /><br>
+                <label for="password" required>Password:</label>
+                <input type="password" name="password" id="password" /><br>
+                <input type="submit" value="Submit" />
+            </fieldset>
+	</body>
+</html>
